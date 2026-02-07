@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Group | Acustica Pragensis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .academic-gradient {
+            background: linear-gradient(135deg, #003366 0%, #006699 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <header class="academic-gradient text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-4xl font-bold mb-2">Acustica Pragensis</h1>
+                <p class="text-xl opacity-90">Czech Technical University in Prague</p>
+            </div>
+            <img src="figs/electrical_engeneering_negativ.svg" alt="CTU Logo" class="h-20 mt-6 md:mt-0">
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-12 px-6">
+        
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-800 inline-block mb-6">About Our Research</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Our group focuses on the intersection of <strong>physics-informed machine learning</strong> and <strong>physical acoustics</strong>. 
+                We leverage data-driven methods to bridge the gap between complex numerical simulations and interpretable physical models. 
+                By employing advanced symbolic regression and optimization algorithms, we discover the underlying governing equations of 
+                nonlinear wave phenomena and optimize the band structure properties of periodic sonic crystals.
+            </p>
+        </section>
+
+        <hr class="my-12">
+
+        <section class="mb-20">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-2/5">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Topic 1: Data-Driven Discovery of Weakly Nonlinear Wave Equations</h3>
+                    <p class="mb-4 text-gray-600">
+                        In this article, data-driven methods for discovering governing equations are brought to the field of finite-amplitude acoustics, and the associated challenges are examined. One significant difficulty is the numerical evaluation of derivatives in the vicinity of shocks, which is solved by employing a weak formulation of the partial differential equations. For benchmarking, the classical model equations in the weakly nonlinear regime are recovered from data: the Westervelt equation for purely progressive waves and the Kuznetsov equation for interfering waves. The results further demonstrate that the approach is applicable to partial differential equations involving a second time derivative, as well as to problems in more than one spatial dimension.
+                    </p>
+                    <ul class="list-disc ml-6 space-y-2 text-gray-600 mb-6">
+                        <li>We establish a procedure to discover weakly nonlinear acoustic wave equations.</li>
+                        <li>Weak formulation avoids unreliable numerical derivatives near shocks.</li>
+                        <li>We benchmark the method in 1D and 2D on Westervelt and Kuznetsov equations.</li>
+                    </ul>
+                    <a href="https://doi.org/10.1016/j.jsv.2025.119625" class="inline-flex items-center text-blue-700 font-semibold doi-link" target="_blank">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                        Read more: JSV 2025
+                    </a>
+                </div>
+                <div class="md:w-3/5 bg-white p-4 rounded-xl shadow-md border">
+                    <img src="figs/graphical_abstract.png" alt="Data Driven Discovery Graphical Abstract" class="w-full h-auto rounded">
+                    <!-- <p class="text-xs text-center mt-3 text-gray-400 italic">Graphical Abstract: Hruška et al.</p> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Topic 2: Modelling Band Structure Properties using Symbolic Regression</h3>
+                    <p class="mb-4 text-gray-600">
+                        Although the variety of analytical approaches and numerical methods to solve sonic crystal problems is wide, the known analytical expressions used to model the band structure properties are limited to a few special cases. Having an access to a numerical model is a good starting point for data-driven discovery. In this case, a symbolic regression based on genetic optimization is employed. Our previous results provide a deeper understanding of the underlying principles and offer an efficient alternative to computationally demanding numerical optimization. Moving towards a Schr ̈odinger-like equation and parametrization by Gaussian curvature allows for a more multiphysical approach but also faces some challenges in terms of geometry feasibility limits.
+                    </p>
+                    <ul class="list-disc ml-6 space-y-2 text-gray-600 mb-6">
+                        <li>Symbolic regression is employed to obtain transmission properties of 1D sonic crystals.</li>
+                        <li>Discovered formulas directly relate unit cell geometry and bandgap characteristics</li>
+                        <li>Efficient alternative to computationally demanding numerical optimization and provides a deeper understanding of the underlying principles</li>
+                    </ul>
+                    <div class="flex flex-col gap-2">
+                        <a href="https://doi.org/10.1016/j.jsv.2024.118821" class="inline-flex items-center text-blue-700 font-semibold doi-link" target="_blank">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                            JSV 2024 (Foundation)
+                        </a>
+                        <a href="https://doi.org/10.61782/fa.2025.0539" class="inline-flex items-center text-blue-700 font-semibold doi-link" target="_blank">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                            FA 2025 (New follow-up)
+                            <!-- - Schroedinger-like equation and Gaussian curvature) -->
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-white p-4 rounded-xl shadow-md border">
+                    <img src="figs/sonic_crystal_pysr_cover.svg" alt="Sonic crystals" class="w-full h-auto rounded">
+                    <!-- [cite_start]<p class="text-xs text-center mt-3 text-gray-400 italic">DAGA 2025 Highlights: Furmanová & Hruška [cite: 1, 2]</p> -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-800 inline-block mb-8">Selected Publications</h2>
+            <div class="space-y-3">
+                <div class="p-4 bg-white shadow-sm border-l-4 border-blue-800 rounded">
+                    <p class="text-gray-800">V. Hruška, A. Furmanová, T. Filipská, J. Valášek. <strong>"Data-driven discovery of weakly nonlinear wave equations."</strong> <em>Journal of Sound and Vibration</em> (2026). DOI: <a href="https://doi.org/10.1016/j.jsv.2025.119625" class="text-blue-600">10.1016/j.jsv.2025.119625</a></p>
+                </div>
+                <div class="p-4 bg-white shadow-sm border-l-4 border-blue-800 rounded">
+                    <p class="text-gray-800">V. Hruška, A. Furmanová, M. Bednařík <strong>"Analytical formulae for design of one-dimensional sonic crystals with smooth geometry based on symbolic regression."</strong> <em>Journal of Sound and Vibration</em> (2025). DOI: <a href="https://doi.org/10.1016/j.jsv.2024.118821" class="text-blue-600">10.1016/j.jsv.2024.118821</a></p>
+                </div>
+                <div class="p-4 bg-white shadow-sm border-l-4 border-blue-800 rounded">
+                    <p class="text-gray-800">A. Furmanová, V. Hruška, A. Bajićová. <strong>"Machine learning for modelling band structure properties"</strong> <em>Proceedings of the 11th Convention of the European Acoustics Association Forum Acusticum /
+EuroNoise 2025</em>. DOI: <a href="https://doi.org/10.61782/fa.2025.0539" class="text-blue-600">10.61782/fa.2025.0539</a></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 px-6 text-center">
+        <p class="mb-2">© 2026 Acustica Pragensis</p>
+        <!-- [cite_start]<p class="text-sm opacity-60">Faculty of Electrical Engineering | furmaane@fel.cvut.cz [cite: 3, 4]</p> -->
+    </footer>
+
+</body>
+</html>
